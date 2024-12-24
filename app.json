@@ -13,7 +13,15 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.timmyjose.datasharingdemo"
+      "bundleIdentifier": "com.timmyjose.datasharingdemo",
+      "entitlements": {
+        "com.apple.security.application-groups": [
+          "group.com.timmyjose.datasharingdemo"
+        ],
+        "com.apple.developer.associated-appclip-app-identifiers": [
+          "$(AppIdentifierPrefix)com.timmyjose.datasharingdemo.Clip"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -26,7 +34,19 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-build-properties"
+      "expo-build-properties",
+      [
+        "react-native-app-clip",
+        {
+          "name": "DataShareClip",
+          "nativeClipSrcRootDir": "appClip",
+          "bundleIdSuffix": "Clip",
+          "targetSuffix": "Clip",
+          "groupIdentifier": "group.com.timmyjose.datasharingdemo",
+          "deploymentTarget": "15.0",
+          "appleSignin": true
+        }
+      ]
     ],
     "extra": {
       "eas": {
