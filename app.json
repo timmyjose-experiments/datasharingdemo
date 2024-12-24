@@ -12,16 +12,32 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.timmyjose.datasharingdemo"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.timmyjose.datasharingdemo"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-build-properties"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0737e3af-0d87-40c4-98bc-cfb3e6e2d4c3"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/0737e3af-0d87-40c4-98bc-cfb3e6e2d4c3"
     }
   }
 }
