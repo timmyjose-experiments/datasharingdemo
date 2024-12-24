@@ -19,7 +19,8 @@
     "react-native": "0.74.5",
     "react-native-app-clip": "https://github.com/polybase/react-native-app-clip#native-app-clips",
     "react-native-safe-area-context": "^5.0.0",
-    "react-native-screens": "^4.4.0"
+    "react-native-screens": "^4.4.0",
+    "user-defaults-suite-ios": "file:./user-defaults-suite-ios"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
